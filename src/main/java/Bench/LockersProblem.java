@@ -9,7 +9,11 @@ public class LockersProblem {
 	        }
 	        for (int i = 2; i <= 100; i++) {
 	            for (int j = 1; i * j <= 100; j++) {
-	                lockers[i * j] = (lockers[i * j] == true) ? false : true;
+	            	if (lockers[i * j] == true) {
+	            		lockers[i * j] =  false;
+	            	}else {
+	            		lockers[i * j] =  true;
+	            	}
 	            }
 	        }
         	int open=0;
