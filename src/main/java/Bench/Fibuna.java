@@ -27,13 +27,10 @@ public class Fibuna {
 
     public static int fib(int term) {
 
-        if(term == 1) {
-            return 1;
-        } else if(term == 2) {
-            return 2;
-        } else {
-            return fib(term - 2) + fib(term - 1);
-        }
+        if(term == 0) { return 0; }
+        if(term <= 2) { return 1; }
+        
+        return fib(term - 2) + fib(term - 1);
     }
 }
 
